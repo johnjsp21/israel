@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <style>
+        body {
+            font-family: 'Arial', 'Tahoma', 'Geneva', 'Times New Roman', 'sans-serif';
+            background-color: #67edff;
+            margin: 30px;
+        }
+        h1 {
+            text-align: center;
+            color: #000000;
+            font-size: 36px;
+        }
+    
+        form {
+            background-color: pink;
+            padding: 20px;
+            border-radius: 10px;
+            width: 60%;
+            margin: 0 auto;
+        }
+        form label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+        form input, form select, form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        form input[type="radio"], form input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        .radio-group, .checkbox-group {
+            margin-bottom: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Enrollment Form</h1>
+    </ol>
+
+    <form>
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" placeholder="Enter your age" required>
+
+        <div class="radio-group">
+            <label>Sex:</label>
+            <label><input type="radio" name="sex" value="Male" required> Male</label>
+            <label><input type="radio" name="sex" value="Female" required> Female</label>
+        </div>
+
+        <label for="course">Course Options:</label>
+        <select id="course" name="course" required>
+            <option value="" disabled selected>Select your course</option>
+            <option value="BSIT">BSIT</option>
+            <option value="BSSW">BSSW</option>
+            <option value="BSPA">BSPA</option>
+            <option value="BSE">BSE</option>
+            <option value="DHRS">DHRS</option>
+            <option value="BTVTED">BTVTED</option>
+        </select>
+
+        <div class="checkbox-group">
+            <label>Where do you see your future interests?:</label>
+            <label><input type="checkbox" name="interests" value="Web Development"> Web Development</label>
+            <label><input type="checkbox" name="interests" value="Data Science"> Data Science</label>
+            <label><input type="checkbox" name="interests" value="Networking"> Networking</label>
+            <label><input type="checkbox" name="interests" value="Graphic Design"> Graphic Design</label>
+            <label><input type="checkbox" name="interests" value="Cybersecurity"> Cybersecurity</label>
+            <label><input type="checkbox" name="interests" value="Computer Engineering"> Computer Engineering</label>
+        </div>
+
+        <button type="submit">Enroll Now</button>
+    </form>
+
+    <h3>Enrolled Students:</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Course</th>
+                <th>Interests</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John joseph israel</td>
+                <td>johnjosephisrael@gmail.com</td>
+                <td>19</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Web Development, Graphic Design</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nerjie Mecantina</td>
+                <td>Nerjie@gmail.com</td>
+                <td>19</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Cybersecurity, Web Development</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Coedy de la cruz</td>
+                <td>coedy@gmail.com</td>
+                <td>22</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Networking, Graphic Design</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ralph Richmond Amarillo</td>
+                <td>Ralph@gmail.com</td>
+                <td>22</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Computer Engineering, Graphic Design</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Monkey D. Luffy</td>
+                <td>Mugiwara2@gmail.com</td>
+                <td>20</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Computer Engineering</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
